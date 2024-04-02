@@ -1,0 +1,42 @@
+/* HEADER */
+
+/* Nav synling */
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Nav hamburger usynlig */
+.headerHamburger {
+    display: none;
+}
+
+.headerUl {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.hamburgerIcon {
+   display: none;
+}
+
+@media (max-width: 769px) {
+    /* Nav usynelig */
+    .headerNav {
+        display: none;
+    }
+
+    /* Nav hamburger synlig */
+    .headerHamburger {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hamburgerIcon {
+        display: inline;
+        height: 32px;
+        width: 32px;
+    }
+}
